@@ -1,17 +1,10 @@
 {
   "expo": {
-    "name": "tes-app",
-    "slug": "tes-app",
+    "name": "Triple App",
+    "slug": "Triple App",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true
     },
@@ -24,7 +17,19 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0f172a",
+          "image": "./assets/logo.png",
+          "imageWidth": 200
+        }
+      ],
+      "expo-secure-store"
+    ]
   }
 }
